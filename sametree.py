@@ -47,7 +47,7 @@ class Solution:
         return self.isSubtree(root.left, subRoot.right) and self.isSubtree(root.right, subRoot.right)
 
     
-    def sameSubtree(self, root: TreeNode, subRoot: TreeNode):
+    def sameSubtree(self, root: TreeNode, subRoot: TreeNode) -> bool:
         if not root and not subRoot:
             return True
         
@@ -55,6 +55,11 @@ class Solution:
             return self.sameSubtree(root.right, subRoot.right) and self.sameSubtree(root.left, subRoot.left)
 
         return False
+    
+    def invertTree(self, root: TreeNode) -> TreeNode:
+        # [2,1,3] -> [2,3,1]
+        # [4,2,7,1,3,6,9] -> [4,7,2,9,6,3,1]
+
 
 
 
