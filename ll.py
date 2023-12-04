@@ -35,6 +35,8 @@ class LL:
             currentPosition += 1
             head = head.next
 
+            ##Add TODO: note
+
         
 
     def print(self):
