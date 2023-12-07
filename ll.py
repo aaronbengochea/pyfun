@@ -37,6 +37,19 @@ class LL:
 
             ##Add TODO: note
 
+    def findNode(self, value):
+        head = self.head
+        index = 0
+        while head is not None:
+            if(head.val == value):
+                return head, index
+            else:
+                head = head.next
+                index += 1
+
+        return None
+
+
         
 
     def print(self):
@@ -91,8 +104,13 @@ if __name__ == "__main__":
     #linkedList.print()
     #DLinkedList.print()
 
-    node5 = LLNode(5)
-    linkedList.insertNode(node5,6)
+    #TODO: Need to fix this
+    #node5 = LLNode(5)
+    #linkedList.insertNode(node5,6)
     linkedList.print()
+
+    nodeNew, index = linkedList.findNode(3)
+    print("-------")
+    print(nodeNew.val, index)
     
 

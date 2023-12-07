@@ -56,15 +56,12 @@ class Solution:
 
         return False
     
-    def invertTree(self, root: TreeNode) -> TreeNode:
+    #TODO: Work this and all other tree functions I did in C++ but in python
+    #def invertTree(self, root: TreeNode) -> TreeNode:
         # [2,1,3] -> [2,3,1]
         # [4,2,7,1,3,6,9] -> [4,7,2,9,6,3,1]
 
-
-
-
 def main():
-
     #Creating different Trees
     x = TreeNode(1)
     y = TreeNode(2)
@@ -109,6 +106,7 @@ def main():
     # Creating isSubtree solutions
     result6 = solution.isSubtree(x,y)
     print("isSubTree: ", result6)
+
 
 
         
