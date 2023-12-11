@@ -129,6 +129,17 @@ class LL:
                 return current
             current = current.next
         return None
+    
+    #LeetCode 143
+    def moveTailBehindHead(self):
+        current = self.head
+        prev = None
+        while current.next:
+            prev = current
+            current = current.next
+        prev.next = None
+        current.next = self.head.next
+        self.head.next = current
 
     def print(self):
         current = self.head
@@ -277,9 +288,10 @@ if __name__ == "__main__":
     linkedList.print()
 
     linkedList.removeAtPostion(5)
-    linkedList.removeFirstElement()
-    linkedList.removeLastElement()
-    linkedList.removeLastElement()
+    # linkedList.removeFirstElement()
+    # linkedList.removeLastElement()
+    linkedList.moveTailBehindHead()
+    linkedList.moveTailBehindHead()
     linkedList.print()
     print(linkedList.size())
 
