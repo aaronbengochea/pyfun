@@ -11,6 +11,8 @@ def parseData(content):
     #Go through each game, then go through each subgame
     #check marble count in subgames
     #if subgame false, exit .. go to next game, do not record the game as a possible game
+
+    #will resume work on the above tomorrow
     for game in games:
         gameNumber, pairs = game.split(':')
 
